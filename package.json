@@ -1,14 +1,15 @@
 {
-  "name": "blockflix",
-  "version": "0.0.1",
-  "description": "Backend of BlockFlix",
+  "name": "http-video-stream",
+  "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
-  "author": "Smooth",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.20"
   }
 }
