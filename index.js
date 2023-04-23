@@ -3,11 +3,9 @@ const app = express();
 const port = 3000;
 
 
+app.use("/static",express.static(__dirname + "/public"))
 
-app.get("/", (req,res) => {
-    res.sendFile("/public/video.mp4", {root: __dirname})
-    console.log("Someone Requested")
-})
+
 app.listen(port, () => {
-    console.log("Hosted on port " + port)
+    console.log("Hosted on port" + port)
 })
