@@ -6,6 +6,7 @@ app.use("/static",express.static(__dirname + "/public"))
 
 app.get('/', (req, res) => {
     res.send("Hello World!");
+    console.log("Pong")
 });
 
 app.listen(port, () => {
