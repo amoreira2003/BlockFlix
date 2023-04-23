@@ -3,9 +3,10 @@ const app = express();
 const port = 3000;
 
 
-app.use("/static",express.static(__dirname + "/public"))
-
-
+app.get("/", (req,res) => {
+    res.sendFile(express.static(__dirname + "/public/index.html"))
+    console.log("Someone Requested")
+})
 app.listen(port, () => {
     console.log("Hosted on port " + port)
 })
